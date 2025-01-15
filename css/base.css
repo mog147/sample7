@@ -57,11 +57,17 @@
     color: var(--dark-main-color );
     text-decoration: none;
     text-align: center;
-    /* adobe fonts */
-    font-family: "vdl-gigamaru", sans-serif;
-    font-weight: 500;
+    font-family: "kokuryu", sans-serif;
+    font-weight: 400;
     font-style: normal;
   }
+
+  .conB,
+  .conC,
+  .footer{
+    margin: -1rem 0;
+  }
+  
 
 .scrollbox img{
   display: flex;
@@ -70,19 +76,6 @@
   text-align: center;
 }
 
-.text__left p{
-  text-align: left;
-}
-
-
-.btn-reserve{
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 40%;
-  z-index: 999;
-}
 /* ------------------------------ */
 /* リンクをちょうどいい位置に飛ばす */
   a.anchor {
@@ -116,36 +109,13 @@
   display: none;
 }
 
-.fix{
-  position: fixed;
-  top: 0;
-}
-
 .header {
   top: 0;
-  height: 80px;
-  background-color: var(--dark-main-color);
 } 
 
-.header__reserve{
-  position: relative;
-  z-index: 999;
-}
-
-.header__reserve a {
-  justify-content: flex-start;
-}
-
-.btn__reserve{
-  top: 0;
-  position: fixed;
-}
-
 .header__menu {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  z-index: 300;
-  left: 10px;
+  z-index: 999;
+
 }
 
 .header__menu-bar {
@@ -170,7 +140,6 @@
   background: none;
   border: none;
 
-  margin-left: auto;
   margin-right: 0;
   padding:90px 30px;
 }
@@ -201,26 +170,7 @@
 /* ------------------------------ */
 /* footer */
 
-.footer{
-  background-color: var(--dark-main-color);
-  height: auto;
-  padding: 3rem 0;
-}
- 
-.foot__text{
-  padding: 1rem 0;
-  display: block;
-}
 
-.foot__text h2{
-  font-size: 2rem;
-}
-
-.foot__text h2,
-.foot__text p{
-  text-align: left;
-  line-height: 0.1rem;
-}
 
     
   /* footer */
