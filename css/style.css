@@ -1,0 +1,148 @@
+/* 基本色 */
+:root {
+  --main-color : #fff; /*rgba(255, 255, 255, 0)*/
+  --accent-color : #ececec;
+  --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
+  --large-width:1000px;
+  --middle-width:800px;
+  --small-width:450px;
+}
+section{
+  padding: 60px 0;
+}
+
+.container {
+  padding: 0 2rem; 
+}
+
+
+.icon {
+  width: 35%;
+  margin:0 auto;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.sub__accent{
+  color: var(--sub-color);
+}
+
+ /** クラス指定の先頭の文字列がtitleだったらという指定*/
+[class^="title"] {
+  font-size: 24px;
+  line-height: 2;
+}
+
+.title img{
+  width: 100%;
+  margin: 10px auto;
+}
+
+.conA{
+  padding: 0;
+  margin-bottom: -10rem;
+}
+
+.conA,
+.scrollbox,
+.header__menu,
+.header__menu-bar{
+  width: 100vw;
+}
+
+.conA,
+.header__menu-list,
+input, textarea{
+  width: 100%;
+}
+
+
+.conA,
+.header,
+.header__menu,
+.header__menu-bar{
+  max-width: var(--small-width);
+}
+
+/* ------------------------------ */
+ /* hero-top */
+
+.conB {
+  background-color: var(--dark-main-color);
+}
+
+.conA__image{
+  width: 100%;
+  height:auto;
+  min-height: 100vh;
+  z-index: 100;
+
+}
+
+/* hero-top */
+/* ------------------------------ */
+
+/* ------------------------------ */
+/* conB introduce**/
+
+.conB {
+  background-image: url(../img/title.png);
+  background-position: center center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  margin-top: -1rem;
+}
+
+.conB__boxA,
+.conB__boxB{
+  margin: 0 auto 75px auto;
+}
+
+.conB__image{
+  width: 100%;
+  margin: 50px auto;
+}
+
+/* conB*/
+/* ------------------------------ */
+/* conC */
+
+.conC,
+.conD{
+  background-color: var(--accent-color);
+}
+
+.conC__image{
+  width: 65%!important;
+}
+
+.conC p {
+  color: var(--dark-main-color);
+}
+
+/* conC*/
+/* ------------------------------ */
+/* conD*/
+
+.conD__image{
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 -4px 5px -2px gray inset;
+}
+
+.conD__btn {
+  width: 300px;
+  margin: 5rem auto;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: var(--accent-color);
+  background-color: var(--dark-main-color);
+  box-shadow: 0 0 8px gray;
+}
+
+/* conD*/
+/* ------------------------------ */

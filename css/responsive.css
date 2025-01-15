@@ -1,0 +1,148 @@
+
+/* 基本色 */
+:root {
+  --main-color : #fff; /*rgba(255, 255, 255, 0)*/
+  --accent-color : #ececec;
+  --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
+  --large-width:1000px;
+  --middle-width:800px;
+  --small-width:450px;
+}
+ 
+ /* ------------------------ */
+/* phoneのときの制御 */
+@media (max-width:599px) {
+
+    .conPC {
+      display: none;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    p {
+        font-size: 14px;
+    }
+
+  } 
+    
+  /* phoneのときの制御 */
+  /* ------------------------ */
+  
+  /* ------------------------ */
+  /* タブレットのときの制御 */
+  @media (min-width:600px) and (max-width:799px) {
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+  }
+  /* タブレットのときの制御 */
+  /* ------------------------ */
+  
+  /* ------------------------ */
+  /* PCのときの制御 */
+
+  @media (min-width:800px){
+
+    h2 {
+        font-size: 24px;
+    }
+  
+    p {
+        font-size: 18px;
+    }
+
+    .conPC {
+      position: fixed;
+      top:  -5rem;
+      z-index: -1;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      min-height: 450px;
+      background-position: center bottom;
+      background-size: contain;
+      text-align: center;
+      overflow: hidden;
+      content:'';      
+    }
+  
+    .conPC,
+    .main__image{
+        width: 100%;
+    }
+
+    .main__image{
+      position: relative;
+      z-index: 10;
+    }
+
+    .title img{
+      margin: 50px auto;
+    }
+
+    .subtitle{
+      position: absolute;
+      top:12rem;
+      left: 7rem;
+      z-index: 20;
+      width: 15%;
+    }
+
+    header{
+      top:0;
+      z-index: 800;
+    }
+
+ 
+    header,
+    .scrollbox{
+      width:var(--small-width);
+      height: auto;
+      left: 50%;
+      position: absolute;
+    }
+
+    .conA{
+      z-index: 100;
+    }
+  
+    .conB__boxA{
+      margin-top: 80px;
+    }
+  
+    .conB__boxB{
+      margin-top: 60px;
+    }
+  
+    .foot__image__pc{
+      position: fixed;
+      top:5%;
+      left:180%;
+      width: 30%;
+    }
+
+  }
+
+ 
+  /* PCのときの制御 */
+  /* ------------------------ */
+  
+  /* ------------------------ */
+  /* ダークモードの対応 */
+  .div {
+    color: light-dark(#333, #fff);
+    background-color: light-dark(#fff, #333);
+  }
+  /* ダークモードの対応 */
+  /* ------------------------ */
+  
+  
+  
