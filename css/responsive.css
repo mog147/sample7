@@ -25,6 +25,9 @@
         font-size: 14px;
     }
 
+    .phone{
+      overflow: hidden;
+    }
 
   } 
     
@@ -106,7 +109,7 @@
     .scrollbox{
       width:var(--small-width);
       height: auto;
-      left: 50%;
+      left: 20%;
       position: absolute;
     }
   
